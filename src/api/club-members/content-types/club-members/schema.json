@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "club_memberss",
+  "info": {
+    "singularName": "club-members",
+    "pluralName": "club-memberss",
+    "displayName": "Club_Members"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "Admin",
+        "Contributor",
+        "Viewer"
+      ]
+    },
+    "Bio": {
+      "type": "text"
+    },
+    "Profile_Picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "LinkedIn": {
+      "type": "string"
+    }
+  }
+}
