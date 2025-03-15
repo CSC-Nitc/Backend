@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "club_memberss",
+  "collectionName": "team_members",
   "info": {
-    "singularName": "club-members",
-    "pluralName": "club-memberss",
-    "displayName": "Club_Members",
+    "singularName": "team-member",
+    "pluralName": "team-members",
+    "displayName": "team_member",
     "description": ""
   },
   "options": {
@@ -14,8 +14,20 @@
     "Name": {
       "type": "string"
     },
+    "Role": {
+      "type": "string"
+    },
+    "Specialization": {
+      "type": "string"
+    },
     "Email": {
       "type": "email"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
     },
     "Profile_Picture": {
       "type": "media",
@@ -27,12 +39,6 @@
         "videos",
         "audios"
       ]
-    },
-    "LinkedIn": {
-      "type": "string"
-    },
-    "Role": {
-      "type": "string"
     }
   }
 }
